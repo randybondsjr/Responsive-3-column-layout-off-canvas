@@ -1,6 +1,6 @@
 # A Responsive 3 Column Off Canvas Layout
 
-Github Repo: [https://github.com/rbjdbkilla/Responsive-3-column-layout-off-canvas/]https://github.com/rbjdbkilla/Responsive-3-column-layout-off-canvas/
+Github Repo: https://github.com/rbjdbkilla/Responsive-3-column-layout-off-canvas/
 
 Revised date: 2012-04-12
 
