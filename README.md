@@ -3,6 +3,7 @@
 Revised date: 2012-04-12
 
 By: Randy Bonds Jr. [My Site](http://www.rbjdesigns.com/)
+
 Based on: Jason Weaver's Off Canvas Concepts and Code. [His Site](http://jasonweaver.name/lab/offcanvas/)
 
 ## Summary: 
