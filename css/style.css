@@ -1,0 +1,144 @@
+* {margin: 0; padding: 0;}
+body{
+	font: 16px Arial, sans-serif;
+}
+nav {
+	background: purple;
+}
+[role="main"] {
+	background: red;
+}
+aside {
+	background: green;
+}
+header {
+	background: brown;
+}
+footer {
+	background: #333;
+	color: #fff;
+}
+.clearfix{
+	clear: both;
+}
+.menu-link, .sidebar-link {
+	color: #fff;
+	font-size: 30px;
+	display: block;
+	padding: 5px 15px;
+	background: #000;
+	border-radius: 5px;
+	text-decoration: none;
+	font-weight: bold;
+}
+[role="navigation"],
+[role="main"],
+[role="complementary"] {
+	transition: .2s all ease;			
+	width: 90%;
+	padding: 5%;
+}
+.js [role="navigation"] {	
+	margin-left: -100%;
+	float: left;
+}
+.js [role="main"] {
+	margin-left: 0;
+	float: left;
+}
+.js [role="complementary"] {	
+	margin-right: -200%;
+	display: none;
+	float: left;		
+}
+
+.menu-link {
+		display: inline;
+}
+@media all and (min-width: 37.5em) {	/*tabletish*/
+	.js [role="navigation"] {
+		width: 20%;	
+	}
+	.js [role="main"] {
+		width: 60%;
+		float: left;
+	}
+	.js [role="complementary"] {
+		margin-left: 0;
+		width: 20%;
+		display: inline;
+	}				
+	.active-sidebar [role="navigation"] {	
+		margin-left: -100%;
+	}
+	.active-sidebar [role="main"] {
+		margin-left: 0;
+		width: 60%;
+	}
+	.active-sidebar [role="complementary"] {	
+		margin-right: -80%;
+		width: 20%;
+		
+	}
+	.sidebar-link {
+		display: none;
+	}
+	.menu-link {
+		display: inline;
+	}
+}
+@media all and (min-width: 50em) {	/*big*/
+	.js [role="navigation"] {
+		width: 19%;	
+		margin-left: 0;
+		float: left;
+		padding: 3%;
+		
+	}
+
+	.js [role="main"] {
+		width: 44%;
+		padding: 3%;		
+	}
+
+	.js [role="complementary"] {
+		width: 19%;	
+		padding: 3%;	
+		margin-right: 0;
+		float: right;
+		display: inline;
+	}		
+	.menu-link {
+			display: none;
+	}		
+}
+
+.pull-right {
+float: right;
+}
+.pull-left {
+float: left;
+}
+.active-nav [role="navigation"] {	
+	margin-left: 0;	
+	width: 80%;
+}
+.active-nav [role="main"]{
+	margin-right: -100%;
+}
+.active-nav [role="complementary"] {	
+	margin-right: -100%;
+	display: none;
+	float: left;		
+}
+.active-sidebar [role="navigation"] {	
+	margin-left: -100%;
+}
+.active-sidebar [role="main"] {
+	margin-left: -90%;	
+}
+.active-sidebar [role="complementary"] {	
+	margin-left: 0;
+	width: 80%;	
+	display: inline;
+}

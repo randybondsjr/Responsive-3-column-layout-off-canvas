@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="lt-ie10 no-js"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>A 3-column Responsive Off-Canvas Menu</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script>
+			
+			$(document).ready(function(){
+				$("html").addClass("js");
+				$("html").removeClass("no-js");
+				$(".menu-link").click(function(e) {
+				  e.preventDefault();
+				  $('body').removeClass("active-sidebar");
+				  $('body').toggleClass("active-nav");
+				  
+				});
+				$(".sidebar-link").click(function(e) {
+				  e.preventDefault();
+				  $('body').removeClass("active-nav");
+				  $('body').toggleClass("active-sidebar");
+				  
+				});
+			});
+		</script>
+
+</head>
+<body>
+	<header>
+	 Hey! Hey! I'm the Header!	
+	</header>
+	<nav role="navigation" class="navigation">
+		<ul>
+			<li>Link One</li>	
+			<li>Link Two</li>
+			<li>Link Three</li>
+		</ul>
+	</nav>
+	<div role="main">
+		<a href="#nav" class="menu-link pull-left">&equiv;</a>
+		<a href="#sidebar" class="sidebar-link pull-right">&gt;</a>
+		<div style="clear: both"></div>
+		<article>
+		<h1>My article</h1>
+			<p>Content</p>
+		</article>	
+	</div>
+	<aside role="complementary">
+		aside
+	</aside>
+	<div class="clearfix"></div>
+	<footer>
+		Footer I be, yes it is!
+	</footer>
+</body>
+</html>
