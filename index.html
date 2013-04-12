@@ -8,26 +8,7 @@
     <title>A 3-column Responsive Off-Canvas Menu</title>
     <link href="css/style.css" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-		<script>
-			
-			$(document).ready(function(){
-				$("html").addClass("js");
-				$("html").removeClass("no-js");
-				$(".menu-link").click(function(e) {
-				  e.preventDefault();
-				  $('body').removeClass("active-sidebar");
-				  $('body').toggleClass("active-nav");
-				  
-				});
-				$(".sidebar-link").click(function(e) {
-				  e.preventDefault();
-				  $('body').removeClass("active-nav");
-				  $('body').toggleClass("active-sidebar");
-				  
-				});
-			});
-		</script>
-
+	<script src="js/main.js"></script>
 </head>
 <body>
 	<header>
